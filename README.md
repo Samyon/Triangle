@@ -6,5 +6,17 @@
 | Benchmark    | 44.7645 ns | 0.3270 ns | 0.2899 ns | 44.8280 ns |
 | BenchmarkStr | 45.9841 ns | 0.9741 ns | 1.0423 ns | 45.6981 ns |
 
-![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
 
+<img src="canvas.png" alt="Визуализация тестов">
+
+Решения в ClassLibrary1/Triangle2.cs
+
+Как видно (см выше таблица и картинка), это наиболее быстрая реализация решения, также для сравнения есть реализации Triangle, Triangle1, TriangleStr.
+
+В решении BenchmarkApp тесты на производительность
+- тесты с помощью Stopwatch (Test.cs)
+- тесты BenchmarkDotNet (Test2.cs)
+
+В решении UnitTestProject1 тесты на правильность (Юнит тесты)
+
+Что ещё можно сделать - оформить лучше тесты, лучше оптимизировать (но тут и так хорошо), точнее вычислить погрешность eps
